@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SignUp"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="24dp"
+    android:layout_marginVertical="50dp"
+    android:textColor="@color/secondarydarkcolor">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Daftar"
+        android:textSize="28sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/poppins"
+        android:text="Yuk, daftarkan akunmu dengan email dan kata sandi"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Nama"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Masukkan nama lengkap"
+        android:padding_vertical="14dp"
+        android:paddingStart="24dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginBottom="24dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Email"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Masukkan email"
+        android:padding_vertical="14dp"
+        android:paddingStart="24dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginBottom="24dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Kata Sandi"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Masukkan kata sandi"
+        android:padding_vertical="14dp"
+        android:paddingStart="24dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginBottom="24dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Konfirmasi Kata Sandi"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Masukkan kata sandi"
+        android:padding_vertical="14dp"
+        android:paddingStart="24dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginBottom="24dp"
+        android:textSize="16sp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah punya akun? "
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Masuk"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:backgroundTint="@color/primarycolor"
+        android:text="Daftar"
+        android:textColor="@color/whitecolor"
+        android:textSize="22sp" />
+
+</LinearLayout>
