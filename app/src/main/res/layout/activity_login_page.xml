@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginPage"
+    android:paddingHorizontal="23dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Masuk"
+        android:textColor="@color/fontdarkcolor"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halo girls! "
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/fontdarkcolor"
+        android:textSize="16sp"
+        android:layout_marginTop="16sp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Masuk aplikasi dengan email yang terdaftar ya cinta 💜"
+        android:textColor="@color/fontdarkcolor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/fontdarkcolor"
+        android:textSize="18sp"
+        android:layout_marginTop="38dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan email"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/secondarylightcolor"
+        android:textSize="14sp"
+        android:padding="14dp"
+        android:paddingStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kata sandi"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/fontdarkcolor"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan kata sandi"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/secondarylightcolor"
+        android:textSize="14sp"
+        android:padding="14dp"
+        android:paddingStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        >
+
+        <TextView
+            android:id="@+id/toSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum punya akun?"
+            android:fontFamily="@font/poppins"
+            android:textSize="16dp"
+            android:textColor="@color/fontdarkcolor"
+            android:layout_marginEnd="5dp"
+
+
+            />
+
+        <Button
+            android:id="@+id/btnDaftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Daftar"
+            android:textColor="@color/fontdarkcolor"
+            android:textSize="16dp"
+            style="?android:attr/borderlessButtonStyle"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/primarycolor"
+        android:fontFamily="@font/poppins_medium"
+        android:padding="14dp"
+        android:text="Masuk"
+        android:textSize="22dp" />
+
+
+</LinearLayout>

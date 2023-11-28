@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.imajunna.noonaapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.imajunna.noonaapp"
         minSdk = 23
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 

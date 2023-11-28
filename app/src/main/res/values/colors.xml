@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primarycolor">#836DDC</color>
+    <color name="primarylightcolor">#BDC1F5</color>
+    <color name="primarydarkcolor">#4E3A9F</color>
+    <color name="secondarydarkcolor">#0B1130</color>
+    <color name="secondarycolor">#121941</color>
+    <color name="secondarylightcolor">#2A346E</color>
+    <color name="whitecolor">#FFF</color>
+    <color name="accentcolor">#F4C2C6</color>
+    <color name="accentlightcolor">#93B7A8</color>
+    <color name="accentdarkcolor">#FAD</color>
+    <color name="fontdarkcolor">#0B1130</color>
 </resources>
