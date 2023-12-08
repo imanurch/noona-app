@@ -101,7 +101,7 @@
 
             />
 
-        <Button
+        <TextView
             android:id="@+id/btnDaftar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -109,18 +109,16 @@
             android:text="Daftar"
             android:textColor="@color/fontdarkcolor"
             android:textSize="16dp"
-            style="?android:attr/borderlessButtonStyle"
             />
     </LinearLayout>
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/primarycolor"
         android:fontFamily="@font/poppins_medium"
-        android:padding="14dp"
         android:text="Masuk"
         android:textSize="22dp" />
 
