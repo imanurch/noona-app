@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LessonPage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/primarydarkcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/poppins"
+            android:text="Lessons"
+            android:textColor="@color/whitecolor"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Siklus Menstruasi yang Tidak Normal"
+            android:textColor="@color/whitecolor"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="23dp"
+            android:paddingBottom="100dp"
+            tools:context=".ui.Lessons"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet consectetur. Feugiat et tempor duis augue senectus justo eu libero elit. Nisl a nunc eu nisi fringilla. Mauris leo massa justo mauris consequat mattis vestibulum. Imperdiet neque faucibus proin vel elementum ac a. Cras pellentesque felis interdum nulla tellus facilisis nulla at facilisi. Vulputate ultrices neque sagittis et et malesuada sapien aliquet tristique. In sagittis sed mi posuere. Viverra fringilla nisl mi faucibus eleifend integer. Sem lacus sed cursus erat. Sit vitae ac volutpat quis vitae montes adipiscing amet morbi. Non montes tincidunt ornare habitant cursus dignissim. Eleifend aliquet dictum lacus in quam eget. Fusce nec arcu sapien elementum at. Gravida fringilla nunc ut nibh cras enim aliquet felis mattis. Velit diam turpis in purus in quis placerat. Vitae turpis ornare nisi ipsum at mauris erat. Massa risus lectus enim vitae. Non sit massa amet etiam purus mattis sollicitudin ultricies. Netus proin nulla libero id. Tortor auctor adipiscing sed nunc urna eros vestibulum eu laoreet. Amet in varius id elementum purus aenean mi tempor integer. Neque at suscipit nunc molestie arcu. Purus ornare at felis fames eu eu. Sed semper adipiscing in nascetur nunc turpis dignissim at in. Gravida magna erat facilisi faucibus morbi elit blandit malesuada pretium. Nunc urna facilisis elit tellus at. Tempor ultricies gravida laoreet mauris morbi. Tempus pellentesque nullam eget posuere laoreet posuere odio. Arcu auctor sollicitudin est aliquet. Vulputate vitae lectus habitasse maecenas diam. Dolor neque egestas leo ut in quam diam. Amet vulputate enim enim amet enim nulla ornare tincidunt tempus. Mattis ut scelerisque scelerisque pulvinar dolor volutpat etiam ut ut. Aenean luctus nibh amet accumsan. Tempor neque sed accumsan diam scelerisque amet massa ut. Auctor phasellus quis diam congue et egestas massa. Massa eu diam morbi egestas faucibus libero lectus ornare risus. Feugiat netus viverra eros massa lacinia neque ridiculus accumsan. Commodo diam placerat donec sed enim id nibh pellentesque. Rhoncus lobortis amet elementum vestibulum cras elementum consectetur pulvinar pellentesque. Quam dolor diam eget ipsum imperdiet augue volutpat. Sit eget tellus felis cursus nunc id. Habitant laoreet ipsum posuere velit sit. Id eleifend laoreet blandit dis feugiat maecenas. Auctor tellus nunc a urna imperdiet ultricies laoreet condimentum consectetur. Magna cum malesuada cursus magna magna. Lorem maecenas dictum quis morbi sed pellentesque viverra volutpat. Urna rutrum nunc id tincidunt. Potenti consequat mollis integer interdum viverra tincidunt egestas. Arcu mi pellentesque sit sit ultrices suspendisse ultrices quisque gravida. Posuere risus mattis nunc potenti. Senectus porta cursus nunc non sed senectus vitae tortor a. Ipsum et porttitor id justo tempor commodo elementum. Nulla dignissim facilisis mauris curabitur id nullam amet pellentesque sit. Fringilla sodales a gravida metus suscipit quisque non in. Nec quam tristique consectetur nunc aliquet elit. Pharetra dui eget et a ipsum nisi nec justo. Tempus lectus morbi molestie dui ultricies porttitor. Euismod eu placerat nullam urna commodo egestas feugiat bibendum amet. Elit ut dictumst ac justo nulla interdum. Arcu risus libero feugiat eget consequat sollicitudin quis lectus integer. Suspendisse lectus ornare fringilla eget. Lacus fringilla quis adipiscing ut magna magna urna. Vitae consectetur sit amet velit quis. Lacus sit sed curabitur dapibus pellentesque. Consectetur quam ullamcorper integer malesuada a sed aenean. Quam tincidunt vulputate eleifend turpis elit ullamcorper suscipit a. Nisi id dignissim amet nec risus laoreet at tellus velit. In nec ultrices et dolor sed. Eget neque odio nunc nunc magna. Porttitor odio faucibus nulla netus. Varius proin ultrices tincidunt eu tempus pellentesque lorem interdum etiam. Diam sit arcu condimentum sagittis erat pellentesque sit et habitant. Mi praesent pellentesque leo vitae vitae. Ac pellentesque dui eros in habitant. Aliquam phasellus purus amet posuere. In est cursus ultricies sollicitudin dolor fermentum. Donec posuere scelerisque nec tempus convallis aliquet habitant. Erat ut cursus vitae vel metus mauris nisl mattis nibh. Ut scelerisque volutpat interdum orci sed in in condimentum. Lacus commodo mattis iaculis in pretium. Ipsum nam nulla sed sodales urna ut quam. Nascetur neque libero eget proin neque neque vitae mauris purus. Mauris tortor nunc imperdiet tellus. A id id risus nibh pellentesque vitae amet. Id condimentum enim blandit nam lacus nisl mi dignissim ut. A tincidunt a risus tellus amet nunc. Arcu egestas tortor enim aliquam ornare eu sed. In pharetra libero dolor vehicula elit risus dui. Risus convallis donec nisi eget. Mi integer neque sapien lectus pellentesque. Ultrices semper nullam arcu facilisi tincidunt tristique nam. Lacus rhoncus urna faucibus eget pretium. Sed amet at urna ipsum. Vehicula in purus euismod tortor. Posuere semper at velit vulputate. Pulvinar in arcu etiam est mi. Lorem proin ac commodo a neque facilisis. Fermentum duis ipsum ut interdum in neque scelerisque accumsan. Enim dui parturient amet nisl amet. Nisi quis vitae tempor urna libero convallis eu amet. Cursus adipiscing quam senectus id tristique lobortis auctor ultrices. Eget urna eget turpis quis curabitur. Vel elementum morbi fringilla commodo fermentum eget elementum velit. Velit aliquet pretium lacus mollis mauris a ut massa. Placerat faucibus non vehicula donec semper. Egestas magna sit bibendum ultrices luctus mattis pellentesque enim. Ac nunc scelerisque tellus congue. Interdum quisque imperdiet ut pharetra mauris amet. Eu quis iaculis sapien et libero commodo vel nunc mi. In metus odio sed sed ligula at ac mi. Id pellentesque lobortis eu congue suspendisse nulla integer et dictum. Suspendisse aliquet quis proin proin adipiscing amet velit consequat id. Dui tortor volutpat lectus egestas ut urna arcu mauris. Ac dolor pharetra turpis at dolor. Ultrices ut turpis ipsum neque sapien egestas. Eu molestie viverra aenean pellentesque tincidunt viverra id quis. Tellus maecenas leo blandit amet convallis. Enim ultrices facilisis dignissim posuere sed viverra quis dolor. Quisque ut neque nunc eget viverra vestibulum velit lorem vitae. In lobortis viverra donec id sit quam mauris eget. Velit cras non urna vestibulum quis lectus. Netus praesent ipsum convallis vel urna. Sit quam orci faucibus viverra metus mus arcu. In feugiat risus gravida sed amet. Sit etiam cursus sit diam varius mauris. Quam nulla eros duis viverra et venenatis nibh. Quis et fames magna lacus eros. Sapien integer scelerisque tortor feugiat molestie pulvinar. Sapien turpis vestibulum tincidunt."
+                android:textColor="@color/fontdarkcolor"
+                android:textSize="16dp"></TextView>
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

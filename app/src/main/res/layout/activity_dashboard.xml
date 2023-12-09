@@ -18,7 +18,9 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:paddingHorizontal="23dp"
-            tools:context=".ui.Dashboard">
+            tools:context=".ui.Dashboard"
+            android:paddingBottom="100dp"
+            >
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -198,9 +200,7 @@
                 android:id="@+id/btnConsultation"
                 android:layout_width="match_parent"
                 android:layout_height="132dp"
-                app:srcCompat="@drawable/banner_consultation"
-                android:layout_marginBottom="100dp"/>
-
+                app:srcCompat="@drawable/banner_consultation"/>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

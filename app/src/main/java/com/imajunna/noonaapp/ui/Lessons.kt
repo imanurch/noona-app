@@ -5,17 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.imajunna.noonaapp.R
 import com.imajunna.noonaapp.databinding.ActivityDashboardBinding
-import com.imajunna.noonaapp.databinding.ActivityLoginPageBinding
+import com.imajunna.noonaapp.databinding.ActivityLessonPageBinding
+import com.imajunna.noonaapp.databinding.ActivityLessonsBinding
 
-class Dashboard : AppCompatActivity() {
-    private lateinit var binding: ActivityDashboardBinding
-
+class Lessons : AppCompatActivity() {
+    private lateinit var binding: ActivityLessonsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDashboardBinding.inflate(layoutInflater)
+        binding = ActivityLessonsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.btnLessons.setOnClickListener {
-            startActivity(Intent(this, Lessons::class.java))
+        binding.lessoncard1.setOnClickListener {
+            startActivity(Intent(this, LessonPage::class.java))
             finish()
         }
     }
