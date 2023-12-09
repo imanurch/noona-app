@@ -19,5 +19,10 @@ class SignUp : AppCompatActivity() {
             startActivity(Intent(this,LoginPage::class.java))
             finish()
         }
+        binding.btnDaftar.setOnClickListener{
+            startActivity(Intent(this,LoginPage::class.java))
+            finish()
+        }
+
     }
 }

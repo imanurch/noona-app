@@ -14,8 +14,13 @@ class Dashboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         binding.btnLessons.setOnClickListener {
             startActivity(Intent(this, Lessons::class.java))
+            finish()
+        }
+        binding.btnProfile.setOnClickListener {
+            startActivity(Intent(this, Profile::class.java))
             finish()
         }
     }
