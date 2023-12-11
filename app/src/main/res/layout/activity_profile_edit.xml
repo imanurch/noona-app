@@ -47,18 +47,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"></ImageView>
 
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/poppins_extrabold"
-                    android:text="Ica Nur Chasanah"
-                    android:textColor="@color/fontdarkcolor"
-                    android:textSize="24dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView2"></TextView>
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
             <TextView
@@ -70,8 +59,9 @@
                 android:textColor="@color/fontdarkcolor"
                 android:textSize="18dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+                app:layout_constraintTop_toBottomOf="@+id/text_nama" />
             <EditText
+                android:id="@+id/et_nama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Masukkan nama"
@@ -98,6 +88,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/editText" />
 
             <EditText
+                android:id="@+id/et_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_edittext"
@@ -118,8 +109,9 @@
                 android:textColor="@color/fontdarkcolor"
                 android:textSize="18dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+                app:layout_constraintTop_toBottomOf="@+id/text_nama" />
             <EditText
+                android:id="@+id/et_tgl_lahir"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Masukkan tanggal lahir"
@@ -146,6 +138,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/editText" />
 
             <EditText
+                android:id="@+id/et_berat_badan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_edittext"
@@ -170,6 +163,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/editText" />
 
             <EditText
+                android:id="@+id/et_tinggi_badan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_edittext"
