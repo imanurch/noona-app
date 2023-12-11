@@ -100,7 +100,8 @@
                         android:layout_marginBottom="3dp"
                         android:fontFamily="@font/poppins"
                         android:text="Tidak"
-                        android:textSize="16sp"
+                        android:textSize="18dp"
+                        android:textColor="@color/fontdarkcolor"
                         android:track="@drawable/bg_switch"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/textView24"
@@ -114,7 +115,8 @@
                         android:layout_marginBottom="3dp"
                         android:fontFamily="@font/poppins"
                         android:text="Iya"
-                        android:textSize="16sp"
+                        android:textSize="18dp"
+                        android:textColor="@color/fontdarkcolor"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -211,6 +213,7 @@
                                 android:text="Bening"
                                 android:fontFamily="@font/poppins"
                                 android:textSize="18dp"
+                                android:textColor="@color/fontdarkcolor"
                                 />
                             <RadioButton
                                 android:id="@+id/rb_cairan_putih"
@@ -220,6 +223,8 @@
                                 android:text="Putih Susu"
                                 android:fontFamily="@font/poppins"
                                 android:textSize="18dp"
+                                android:textColor="@color/fontdarkcolor"
+
                                 />
                             <RadioButton
                                 android:id="@+id/rb_cairan_coklat"
@@ -229,6 +234,8 @@
                                 android:text="Coklat / Kemerahan"
                                 android:fontFamily="@font/poppins"
                                 android:textSize="18dp"
+                                android:textColor="@color/fontdarkcolor"
+
                                 />
                             <RadioButton
                                 android:id="@+id/rb_cairan_kuning"
@@ -238,6 +245,8 @@
                                 android:text="Kuning Keju / Kehijauan"
                                 android:fontFamily="@font/poppins"
                                 android:textSize="18dp"
+                                android:textColor="@color/fontdarkcolor"
+
                                 />
                         </RadioGroup>
                     </LinearLayout>
@@ -276,6 +285,8 @@
                                 android:text="Sedikit"
                                 android:fontFamily="@font/poppins"
                                 android:textSize="18dp"
+                                android:textColor="@color/fontdarkcolor"
+
                                 />
                             <RadioButton
                                 android:id="@+id/rb_aliran_sedang"
@@ -285,6 +296,8 @@
                                 android:text="Sedang"
                                 android:fontFamily="@font/poppins"
                                 android:textSize="18dp"
+                                android:textColor="@color/fontdarkcolor"
+
                                 />
                             <RadioButton
                                 android:id="@+id/rb_aliran_banyak"
@@ -294,6 +307,8 @@
                                 android:text="Banyak"
                                 android:fontFamily="@font/poppins"
                                 android:textSize="18dp"
+                                android:textColor="@color/fontdarkcolor"
+
                                 />
                         </RadioGroup>
                     </LinearLayout>
@@ -332,6 +347,8 @@
                                 android:text="Sakit Kepala"
                                 android:fontFamily="@font/poppins"
                                 android:textSize="18dp"
+                                android:textColor="@color/fontdarkcolor"
+
                                 />
                             <RadioButton
                                 android:id="@+id/rb_gejala_punggung"
@@ -341,6 +358,8 @@
                                 android:text="Nyeri Punggung"
                                 android:fontFamily="@font/poppins"
                                 android:textSize="18dp"
+                                android:textColor="@color/fontdarkcolor"
+
                                 />
                             <RadioButton
                                 android:id="@+id/rb_gejala_rahim"
@@ -350,6 +369,8 @@
                                 android:text="Nyeri Rahim"
                                 android:fontFamily="@font/poppins"
                                 android:textSize="18dp"
+                                android:textColor="@color/fontdarkcolor"
+
                                 />
                         </RadioGroup>
                     </LinearLayout>
@@ -433,6 +454,8 @@
                                 android:text="10 - 30 menit"
                                 android:fontFamily="@font/poppins"
                                 android:textSize="18dp"
+                                android:textColor="@color/fontdarkcolor"
+
                                 />
                             <RadioButton
                                 android:id="@+id/rb_olahraga_sedang"
@@ -442,6 +465,8 @@
                                 android:text="31 - 60 menit"
                                 android:fontFamily="@font/poppins"
                                 android:textSize="18dp"
+                                android:textColor="@color/fontdarkcolor"
+
                                 />
                             <RadioButton
                                 android:id="@+id/rb_olahraga_banyak"
@@ -451,6 +476,8 @@
                                 android:text="> 60 menit"
                                 android:fontFamily="@font/poppins"
                                 android:textSize="18dp"
+                                android:textColor="@color/fontdarkcolor"
+
                                 />
                         </RadioGroup>
                     </LinearLayout>

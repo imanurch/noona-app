@@ -310,6 +310,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="16dp"
+        android:background="@drawable/icon_add"
         android:backgroundTint="#DF727A"
         android:elevation="6dp"
         android:src="@drawable/ic_plus"
