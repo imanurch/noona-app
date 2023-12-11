@@ -35,12 +35,15 @@
             android:exported="false" />
         <activity
             android:name=".ui.Dashboard"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ui.SignUp"
             android:exported="true" />
         <activity
             android:name=".ui.LoginPage"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

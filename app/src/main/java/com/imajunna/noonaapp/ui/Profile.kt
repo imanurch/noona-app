@@ -3,6 +3,8 @@ package com.imajunna.noonaapp.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.google.firebase.Firebase
+import com.google.firebase.auth.auth
 import com.imajunna.noonaapp.R
 import com.imajunna.noonaapp.databinding.ActivityLessonPageBinding
 import com.imajunna.noonaapp.databinding.ActivityLessonsBinding
@@ -19,8 +21,13 @@ class Profile : AppCompatActivity() {
             finish()
         }
         binding.btnLogout.setOnClickListener {
-            startActivity(Intent(this, LoginPage::class.java))
-            finish()
+            signout()
         }
+    }
+
+    private fun signout() {
+        Firebase.auth.signOut()
+        startActivity(Intent(this, LoginPage::class.java))
+        finish()
     }
 }
