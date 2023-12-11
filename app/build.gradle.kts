@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -55,4 +56,14 @@ dependencies {
 
     //FLOATING BUTTON
     implementation ("com.google.android.material:material:1.3.0-alpha02")
+
+    //FIREBASE
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
+    implementation("com.google.firebase:firebase-analytics")
+
+    //FIREBASE AUTH
+    implementation("com.google.firebase:firebase-auth")
+
+    //FIREBASE FIRESTORE
+    implementation("com.google.firebase:firebase-firestore")
 }

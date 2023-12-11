@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "622710201993",
+    "project_id": "noona-d9eac",
+    "storage_bucket": "noona-d9eac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622710201993:android:ed0e4e059ccb5ce0a47058",
+        "android_client_info": {
+          "package_name": "com.imajunna.noonaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXvYt02Sxt6q2-yFu_GBZjj1ziik5Vwrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
