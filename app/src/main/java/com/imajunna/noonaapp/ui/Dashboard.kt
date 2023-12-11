@@ -23,5 +23,7 @@ class Dashboard : AppCompatActivity() {
             startActivity(Intent(this, Profile::class.java))
             finish()
         }
+        binding.btnPeriodJournal.setOnClickListener {  startActivity(Intent(this, PeriodJournal::class.java))
+            finish() }
     }
 }

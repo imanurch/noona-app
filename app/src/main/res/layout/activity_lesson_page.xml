@@ -73,7 +73,7 @@
             android:orientation="vertical"
             android:paddingHorizontal="23dp"
             android:paddingBottom="100dp"
-            tools:context=".ui.Lessons"
+            tools:context=".ui.LessonPage"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="0dp">
 

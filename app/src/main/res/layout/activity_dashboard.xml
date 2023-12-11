@@ -173,14 +173,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Calendar"
+                android:text="Period Journal"
                 android:textColor="@color/fontdarkcolor"
                 android:textSize="20dp"
                 android:layout_marginTop="24dp"
                 />
 
             <ImageView
-                android:id="@+id/btnCalendar"
+                android:id="@+id/btnPeriodJournal"
                 android:layout_width="match_parent"
                 android:layout_height="164dp"
                 app:srcCompat="@drawable/banner_calendar" />
