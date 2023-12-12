@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FactOrMythActivity"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="24dp"
+    android:background="@color/primarylightcolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="43dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:maxHeight="20dp"
+            android:src="@drawable/icon_back"
+            app:tint="@color/black"
+            ></ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fact or Myth"
+            android:textSize="16sp"
+            android:textAlignment="center"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fact1"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:background="@drawable/bg_fomcard"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="15dp">
+
+        <ImageView
+            android:layout_width="78dp"
+            android:layout_height="72.9dp"
+            android:src="@drawable/pic_fom"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Exercise"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Olahraga bikin darah lancar keluar ngga sih?"
+                android:textSize="14sp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

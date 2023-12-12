@@ -5,202 +5,29 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ScrollView
-        android:layout_height="match_parent"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:menu="@menu/menu"
+        app:backgroundTint="@color/primarycolor"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:itemActiveIndicatorStyle="@color/primarycolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph="@navigation/bottom_navbar"
+        app:defaultNavHost="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="@id/bottomNavigationView" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingHorizontal="23dp"
-            tools:context=".ui.Dashboard"
-            android:paddingBottom="100dp"
-            >
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
-
-                <ImageView
-                    android:id="@+id/btnMore"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/icon_more"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/btnProfile"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:src="@drawable/profile_photo"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <TextView
-                android:id="@+id/text_welcoming"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_extrabold"
-                android:text="Good Morning!"
-                android:textColor="@color/fontdarkcolor"
-                android:textSize="24dp" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:text="Today will be a great day. Something magical will happen today!"
-                android:textColor="@color/fontdarkcolor"
-                android:textSize="16dp"
-                android:layout_marginBottom="24dp"
-                />
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="180dp">
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="180dp"
-                    app:srcCompat="@drawable/banner_prediksi"
-                    />
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView14"
-                        android:layout_width="180dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="160dp"
-                        android:layout_marginTop="24dp"
-                        android:fontFamily="@font/poppins_bold"
-                        android:text="2 hari"
-                        android:textColor="@color/accentdarkcolor"
-                        android:textSize="32sp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="180dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="-16dp"
-                        android:text="selesai menstruasi"
-                        android:textColor="@color/accentdarkcolor"
-                        android:textSize="16sp"
-                        app:layout_constraintStart_toStartOf="@+id/textView14"
-                        app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
-                    <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="wrap_content"
-                        android:text="Perkiraan hari menstruasi berikutnya pada 14 Nov"
-                        android:textColor="@color/whitecolor"
-                        android:fontFamily="@font/poppins"
-                        android:textSize="12sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="@+id/textView15"
-                        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </FrameLayout>
-
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_bold"
-                android:text="Blood Detector"
-                android:textColor="@color/fontdarkcolor"
-                android:textSize="20dp"
-                android:layout_marginTop="24dp"
-                />
-
-            <ImageView
-                android:id="@+id/btnBloodDetector"
-                android:layout_width="match_parent"
-                android:layout_height="164dp"
-                app:srcCompat="@drawable/banner_blooddetetctor" />
-
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_bold"
-                android:text="Materials"
-                android:textColor="@color/fontdarkcolor"
-                android:textSize="20dp"
-                android:layout_marginTop="24dp"
-                />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:id="@+id/btnLessons"
-                    android:layout_width="160dp"
-                    android:layout_height="200dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/banner_lessons" />
-
-                <ImageView
-                    android:id="@+id/btnFactOrMyth"
-                    android:layout_width="160dp"
-                    android:layout_height="200dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/banner_factormyth" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_bold"
-                android:text="Period Journal"
-                android:textColor="@color/fontdarkcolor"
-                android:textSize="20dp"
-                android:layout_marginTop="24dp"
-                />
-
-            <ImageView
-                android:id="@+id/btnPeriodJournal"
-                android:layout_width="match_parent"
-                android:layout_height="164dp"
-                app:srcCompat="@drawable/banner_calendar" />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_bold"
-                android:text="Consultation"
-                android:textColor="@color/fontdarkcolor"
-                android:textSize="20dp"
-                android:layout_marginTop="24dp"
-                />
-
-            <ImageView
-                android:id="@+id/btnConsultation"
-                android:layout_width="match_parent"
-                android:layout_height="132dp"
-                app:srcCompat="@drawable/banner_consultation"/>
-        </LinearLayout>
-    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
