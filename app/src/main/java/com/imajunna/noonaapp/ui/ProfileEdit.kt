@@ -30,7 +30,7 @@ class ProfileEdit : AppCompatActivity() {
 
 
         binding.btnBatal.setOnClickListener {
-            startActivity(Intent(this, Profile::class.java))
+            startActivity(Intent(this, Dashboard::class.java))
             finish()
         }
 

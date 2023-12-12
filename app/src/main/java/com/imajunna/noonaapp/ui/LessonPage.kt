@@ -15,7 +15,7 @@ class LessonPage : AppCompatActivity() {
         binding = ActivityLessonPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.btnBack.setOnClickListener {
-            startActivity(Intent(this, LessonsFragment::class.java))
+            startActivity(Intent(this, Dashboard::class.java))
             finish()
         }
     }

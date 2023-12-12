@@ -12,6 +12,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.firestore
+import com.imajunna.noonaapp.JournalFragment
 import com.imajunna.noonaapp.R
 import com.imajunna.noonaapp.databinding.ActivityAddJournalBinding
 import com.imajunna.noonaapp.databinding.ActivityLoginPageBinding
@@ -31,7 +32,7 @@ class AddJournal : AppCompatActivity() {
         db=Firebase.firestore
 
         binding.btnBack.setOnClickListener{
-            startActivity(Intent(this,PeriodJournal::class.java))
+            startActivity(Intent(this,Dashboard::class.java))
             finish()
         }
 
