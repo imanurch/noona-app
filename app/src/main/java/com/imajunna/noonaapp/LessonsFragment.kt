@@ -1,10 +1,15 @@
 package com.imajunna.noonaapp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.imajunna.noonaapp.databinding.FragmentJournalBinding
+import com.imajunna.noonaapp.databinding.FragmentLessonsBinding
+import com.imajunna.noonaapp.ui.AddJournal
+import com.imajunna.noonaapp.ui.LessonPage
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +26,8 @@ class LessonsFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private lateinit var binding: FragmentLessonsBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -33,8 +40,17 @@ class LessonsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        binding= FragmentLessonsBinding.inflate(inflater,container,false)
+        val view = binding.root
+
+        binding.lessoncard1.setOnClickListener{
+            val intent = Intent(activity, LessonPage::class.java)
+            startActivity(intent)
+        }
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_lessons, container, false)
+        return view
     }
 
     companion object {
