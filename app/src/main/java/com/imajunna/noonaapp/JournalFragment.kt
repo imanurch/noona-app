@@ -1,12 +1,20 @@
 package com.imajunna.noonaapp
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import com.imajunna.noonaapp.adapter.JournalAdapter
 import com.imajunna.noonaapp.databinding.FragmentJournalBinding
+import com.imajunna.noonaapp.model.JournalModel
 import com.imajunna.noonaapp.ui.AddJournal
 
 // TODO: Rename parameter arguments, choose names that match
@@ -24,6 +32,7 @@ class JournalFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
     private lateinit var binding: FragmentJournalBinding
+    private lateinit var recyclerView: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +54,19 @@ class JournalFragment : Fragment() {
             val intent =Intent(activity,AddJournal::class.java)
             startActivity(intent)
         }
+
+        var historyJournal = getHistoryJournal()
+
+        //RECYCLERVIEW HISTORY
+        recyclerView = binding.rvHistoryJournal
+        recyclerView.layoutManager = LinearLayoutManager(activity)
+        recyclerView.setHasFixedSize(true)
+
+        recyclerView.adapter = JournalAdapter(context, historyJournal) { selectedItem ->
+//            val intent = Intent(activity, ##::class.java)
+//        startActivity(intent)
+        }
+
         return view
     }
 
@@ -66,5 +88,16 @@ class JournalFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    private fun getHistoryJournal(): ArrayList<JournalModel> {
+        val sharedPreferences: SharedPreferences =
+            requireActivity().getSharedPreferences("localData", Context.MODE_PRIVATE)
+
+        val gson = Gson()
+        val json = sharedPreferences.getString("historyJournal", "")
+
+        val type = object : TypeToken<ArrayList<JournalModel>>() {}.type
+        return gson.fromJson(json, type) ?: ArrayList()
     }
 }
