@@ -48,6 +48,7 @@
         android:layout_marginTop="38dp"/>
 
     <EditText
+        android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Masukkan email"
@@ -69,6 +70,7 @@
         android:layout_marginTop="24dp"/>
 
     <EditText
+        android:id="@+id/et_sandi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Masukkan kata sandi"
