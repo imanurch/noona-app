@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Exercise"
-            android:textSize="16sp"
+            android:textSize="22sp"
             android:textAlignment="center"></TextView>
     </LinearLayout>
 
@@ -45,45 +45,73 @@
 
         <LinearLayout
             android:layout_width="180dp"
-            android:layout_height="260dp"
+            android:layout_height="280dp"
             android:orientation="vertical"
             android:background="@color/primarylightcolor"
             android:paddingVertical="30dp"
             android:paddingHorizontal="20dp">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="FACT"
-                android:textSize="24dp"
-                android:fontFamily="@font/poppins_bold"
-                android:layout_marginBottom="8dp"></TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Berenang dapat menghentikan siklus menstruasi hingga mandul. Darah menstruasi dapat keluar dan mengotori serta membuat air kolam berubah warna merah."
-                android:textSize="14dp"></TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="180dp"
-            android:layout_height="260dp"
-            android:orientation="vertical"
-            android:background="@color/graycolor"
-            android:paddingVertical="30dp"
-            android:paddingHorizontal="20dp">
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FACT"
+                    android:textSize="24dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginEnd="24dp"></TextView>
+
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:src="@drawable/pic_smile"></ImageView>
+            </LinearLayout>
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MYTH"
-                android:textSize="24dp"
-                android:fontFamily="@font/poppins_bold"
-                android:layout_marginBottom="8dp"></TextView>
+                android:text="Berenang dapat menghentikan siklus menstruasi hingga mandul. Darah menstruasi dapat keluar dan mengotori serta membuat air kolam berubah warna merah."
+                android:textSize="16dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="280dp"
+            android:orientation="vertical"
+            android:background="#E5B2B6"
+            android:paddingVertical="30dp"
+            android:paddingHorizontal="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MYTH"
+                    android:textSize="24dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginEnd="24dp"></TextView>
+
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:src="@drawable/pic_sad"></ImageView>
+            </LinearLayout>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tekanan air di dalam kolam renang akan menghambat darah keluar hanya selama  berada di dalam air air saja. "
-                android:textSize="14dp"></TextView>
+                android:textSize="16dp"></TextView>
         </LinearLayout>
 
     </LinearLayout>
@@ -99,7 +127,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Prev"
-            android:textSize="14dp"
+            android:textSize="16dp"
             android:textColor="@color/primarycolor"
             android:layout_marginEnd="120dp"></TextView>
 
@@ -114,35 +142,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2"
-            android:textColor="@color/black"
+            android:textColor="#BEB4B4"
             android:layout_marginEnd="5dp"></TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3"
-            android:textColor="@color/black"
+            android:textColor="#BEB4B4"
             android:layout_marginEnd="5dp"></TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4"
-            android:textColor="@color/black"
+            android:textColor="#BEB4B4"
             android:layout_marginEnd="5dp"></TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5"
-            android:textColor="@color/black"
+            android:textColor="#BEB4B4"
             android:layout_marginEnd="5dp"></TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Next"
-            android:textSize="14dp"
+            android:textSize="16dp"
             android:textColor="@color/primarycolor"
             android:layout_marginStart="120dp"></TextView>
 
