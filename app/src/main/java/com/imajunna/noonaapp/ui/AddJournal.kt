@@ -113,7 +113,7 @@ class AddJournal : AppCompatActivity() {
                     "Add Period Journal Success!",
                     Toast.LENGTH_SHORT,
                 ).show()
-                startActivity(Intent(this,PeriodJournal::class.java))
+                startActivity(Intent(this,Dashboard::class.java))
                 finish()
             }
             .addOnFailureListener {

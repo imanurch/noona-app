@@ -74,6 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Masukkan kata sandi"
+        android:inputType="textPassword"
         android:fontFamily="@font/poppins"
         android:textColor="@color/secondarylightcolor"
         android:textSize="14sp"

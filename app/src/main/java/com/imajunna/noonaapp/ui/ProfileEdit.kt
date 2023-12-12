@@ -73,7 +73,8 @@ class ProfileEdit : AppCompatActivity() {
                     "Update Profile Success!",
                     Toast.LENGTH_SHORT,
                 ).show()
-                startActivity(Intent(this,Profile::class.java))
+
+                startActivity(Intent(this,Dashboard::class.java))
                 finish()
             }
             .addOnFailureListener {
@@ -84,8 +85,8 @@ class ProfileEdit : AppCompatActivity() {
                 ).show()
             }
 
-        startActivity(Intent(this, Profile::class.java))
-        finish()
+//        startActivity(Intent(this, Dashboard::class.java))
+//        finish()
     }
 
     private fun getUserData(): Map<String, String> {

@@ -1,10 +1,13 @@
 package com.imajunna.noonaapp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.imajunna.noonaapp.databinding.FragmentJournalBinding
+import com.imajunna.noonaapp.ui.AddJournal
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -20,6 +23,7 @@ class JournalFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var binding: FragmentJournalBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,7 +38,14 @@ class JournalFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_journal, container, false)
+        binding=FragmentJournalBinding.inflate(inflater,container,false)
+        val view = binding.root
+
+        binding.fabAddJournal.setOnClickListener{
+            val intent =Intent(activity,AddJournal::class.java)
+            startActivity(intent)
+        }
+        return view
     }
 
     companion object {
