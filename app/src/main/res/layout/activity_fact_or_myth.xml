@@ -4,67 +4,266 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.FactOrMythActivity"
+    android:background="@color/primarylightcolor"
     android:orientation="vertical"
     android:paddingHorizontal="20dp"
     android:paddingVertical="24dp"
-    android:background="@color/primarylightcolor">
+    tools:context=".ui.FactOrMythActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginBottom="43dp"
         android:gravity="center_vertical"
-        android:layout_marginBottom="43dp">
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:maxHeight="20dp"
             android:src="@drawable/icon_back"
-            app:tint="@color/black"
-            ></ImageView>
+            app:tint="@color/black"></ImageView>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Fact or Myth"
-            android:textSize="16sp"
-            android:textAlignment="center"></TextView>
+            android:textAlignment="center"
+            android:textSize="22sp"></TextView>
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/fact1"
-        android:layout_width="match_parent"
-        android:layout_height="101dp"
-        android:background="@drawable/bg_fomcard"
-        android:orientation="horizontal"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="15dp">
-
-        <ImageView
-            android:layout_width="78dp"
-            android:layout_height="72.9dp"
-            android:src="@drawable/pic_fom"></ImageView>
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="27dp"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
+                android:id="@+id/fact1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:fontFamily="@font/poppins_bold"
-                android:text="Exercise"
-                android:textSize="18sp"></TextView>
+                android:layout_height="101dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bg_fomcard"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="15dp">
 
-            <TextView
+                <ImageView
+                    android:layout_width="78dp"
+                    android:layout_height="72.9dp"
+                    android:src="@drawable/pic_fom"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Exercise"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Olahraga bikin darah lancar keluar ngga sih?"
+                        android:textSize="14sp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fact2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Olahraga bikin darah lancar keluar ngga sih?"
-                android:textSize="14sp"></TextView>
+                android:layout_height="101dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bg_fomcard"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="15dp">
+
+                <ImageView
+                    android:layout_width="78dp"
+                    android:layout_height="72.9dp"
+                    android:src="@drawable/pic_fom"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Food and Drink"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Apa sih yang boleh dikonsumsi dan tidak ?"
+                        android:textSize="14sp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fact3"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bg_fomcard"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="15dp">
+
+                <ImageView
+                    android:layout_width="78dp"
+                    android:layout_height="72.9dp"
+                    android:src="@drawable/pic_fom"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Habit"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Emang ada kebiasaan yang bikin menstruasi terhambat?"
+                        android:textSize="14sp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fact4"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bg_fomcard"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="15dp">
+
+                <ImageView
+                    android:layout_width="78dp"
+                    android:layout_height="72.9dp"
+                    android:src="@drawable/pic_fom"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Blood"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Darah gelap tanda hamil??"
+                        android:textSize="14sp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fact5"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bg_fomcard"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="15dp">
+
+                <ImageView
+                    android:layout_width="78dp"
+                    android:layout_height="72.9dp"
+                    android:src="@drawable/pic_fom"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Menstrual Period"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Kalo siklus ngga lancar apa karna penyakitan?"
+                        android:textSize="14sp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fact6"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bg_fomcard"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="15dp">
+
+                <ImageView
+                    android:layout_width="78dp"
+                    android:layout_height="72.9dp"
+                    android:src="@drawable/pic_fom"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Activity"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Banyak aktivitas bikin menstruasi ga teratur?"
+                        android:textSize="14sp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+
+    </ScrollView>
+
 </LinearLayout>
