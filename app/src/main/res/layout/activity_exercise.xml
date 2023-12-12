@@ -68,7 +68,7 @@
             android:layout_width="180dp"
             android:layout_height="260dp"
             android:orientation="vertical"
-            android:background=""
+            android:background="@color/graycolor"
             android:paddingVertical="30dp"
             android:paddingHorizontal="20dp">
 
