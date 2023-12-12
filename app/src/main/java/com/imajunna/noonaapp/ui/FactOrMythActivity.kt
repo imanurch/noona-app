@@ -1,7 +1,9 @@
 package com.imajunna.noonaapp.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.imajunna.noonaapp.DashboardFragment
 import com.imajunna.noonaapp.R
 import com.imajunna.noonaapp.databinding.ActivityDashboardBinding
 import com.imajunna.noonaapp.databinding.ActivityFactOrMythBinding
@@ -15,6 +17,16 @@ class FactOrMythActivity : AppCompatActivity() {
 
         binding = ActivityFactOrMythBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.btnBack.setOnClickListener {
+            startActivity(Intent(this, DashboardFragment::class.java))
+            finish()
+        }
+
+        binding.fact1.setOnClickListener {
+            startActivity(Intent(this, ExerciseActivity::class.java))
+            finish()
+        }
 
 //        binding.btnLessons.setOnClickListener {
 //            startActivity(Intent(this, Lessons::class.java))
