@@ -14,7 +14,7 @@ class PeriodJournal : AppCompatActivity() {
         binding = ActivityPeriodJournalBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnAddJournal.setOnClickListener{
+        binding.fabAddJournal.setOnClickListener{
             startActivity(Intent(this,AddJournal::class.java))
             finish()
         }

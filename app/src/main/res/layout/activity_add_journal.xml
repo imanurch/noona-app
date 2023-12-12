@@ -94,7 +94,7 @@
                         app:layout_constraintTop_toTopOf="parent"></TextView>
 
                     <Switch
-                        android:id="@+id/switch1"
+                        android:id="@+id/sw_mens"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="3dp"
@@ -142,41 +142,113 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         >
-                        <ImageView
-                            android:id="@+id/btn_mood_0"
-                            android:layout_width="56dp"
-                            android:layout_height="56dp"
-                            android:src="@drawable/ic_mood_0"
-                            android:layout_marginRight="16dp"
-                            />
-                        <ImageView
-                            android:id="@+id/btn_mood_1"
-                            android:layout_width="56dp"
-                            android:layout_height="56dp"
-                            android:src="@drawable/ic_mood_1"
-                            android:layout_marginRight="16dp"
-                            />
-                        <ImageView
-                            android:id="@+id/btn_mood_2"
-                            android:layout_width="56dp"
-                            android:layout_height="56dp"
-                            android:src="@drawable/ic_mood_2"
-                            android:layout_marginRight="16dp"
-                            />
-                        <ImageView
-                            android:id="@+id/btn_mood_3"
-                            android:layout_width="56dp"
-                            android:layout_height="56dp"
-                            android:src="@drawable/ic_mood_3"
-                            android:layout_marginRight="16dp"
-                            />
-                        <ImageView
-                            android:id="@+id/btn_mood_4"
-                            android:layout_width="56dp"
-                            android:layout_height="56dp"
-                            android:src="@drawable/ic_mood_4"
-                            android:layout_marginRight="16dp"
-                            />
+<!--                        <ImageView-->
+<!--                            android:id="@+id/btn_mood_0"-->
+<!--                            android:layout_width="56dp"-->
+<!--                            android:layout_height="56dp"-->
+<!--                            android:src="@drawable/ic_mood_0"-->
+<!--                            android:layout_marginRight="16dp"-->
+<!--                            />-->
+<!--                        <ImageView-->
+<!--                            android:id="@+id/btn_mood_1"-->
+<!--                            android:layout_width="56dp"-->
+<!--                            android:layout_height="56dp"-->
+<!--                            android:src="@drawable/ic_mood_1"-->
+<!--                            android:layout_marginRight="16dp"-->
+<!--                            />-->
+<!--                        <ImageView-->
+<!--                            android:id="@+id/btn_mood_2"-->
+<!--                            android:layout_width="56dp"-->
+<!--                            android:layout_height="56dp"-->
+<!--                            android:src="@drawable/ic_mood_2"-->
+<!--                            android:layout_marginRight="16dp"-->
+<!--                            />-->
+<!--                        <ImageView-->
+<!--                            android:id="@+id/btn_mood_3"-->
+<!--                            android:layout_width="56dp"-->
+<!--                            android:layout_height="56dp"-->
+<!--                            android:src="@drawable/ic_mood_3"-->
+<!--                            android:layout_marginRight="16dp"-->
+<!--                            />-->
+<!--                        <ImageView-->
+<!--                            android:id="@+id/btn_mood_4"-->
+<!--                            android:layout_width="56dp"-->
+<!--                            android:layout_height="56dp"-->
+<!--                            android:src="@drawable/ic_mood_4"-->
+<!--                            android:layout_marginRight="16dp"-->
+<!--                            />-->
+                        <RadioGroup
+                            android:id="@+id/rg_mood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <RadioButton
+                                android:id="@+id/rb_mood_0"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:layout_marginRight="16dp"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="18dp"
+                                android:button="@null"
+                                android:backgroundTint="@color/graycolor"
+                                android:backgroundTintMode="multiply"
+                                android:background="@drawable/ic_mood_0"
+                                android:textColor="@color/fontdarkcolor"
+                                />
+                            <RadioButton
+                                android:id="@+id/rb_mood_1"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:layout_marginRight="16dp"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="18dp"
+                                android:button="@null"
+                                android:backgroundTint="@color/graycolor"
+                                android:backgroundTintMode="multiply"
+                                android:background="@drawable/ic_mood_1"
+                                android:textColor="@color/fontdarkcolor"
+                                />
+                            <RadioButton
+                                android:id="@+id/rb_mood_2"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:layout_marginRight="16dp"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="18dp"
+                                android:button="@null"
+                                android:backgroundTint="@color/graycolor"
+                                android:backgroundTintMode="multiply"
+                                android:background="@drawable/ic_mood_2"
+                                android:textColor="@color/fontdarkcolor"
+                                />
+                            <RadioButton
+                                android:id="@+id/rb_mood_3"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:layout_marginRight="16dp"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="18dp"
+                                android:button="@null"
+                                android:backgroundTint="@color/graycolor"
+                                android:backgroundTintMode="multiply"
+                                android:background="@drawable/ic_mood_3"
+                                android:textColor="@color/fontdarkcolor"
+                                />
+                            <RadioButton
+                                android:id="@+id/rb_mood_4"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:layout_marginRight="16dp"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="18dp"
+                                android:button="@null"
+                                android:backgroundTint="@color/graycolor"
+                                android:backgroundTintMode="multiply"
+                                android:background="@drawable/ic_mood_4"
+                                android:textColor="@color/fontdarkcolor"
+                                />
+                        </RadioGroup>
                     </LinearLayout>
                 </HorizontalScrollView>
 
@@ -382,7 +454,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="Suhu Tubuh"
+                    android:text="Suhu Tubuh (°C)"
                     android:textColor="@color/fontdarkcolor"
                     android:textSize="18dp"
                     />
@@ -394,6 +466,7 @@
                     android:background="@drawable/bg_edittext"
                     android:fontFamily="@font/poppins_medium"
                     android:padding="14dp"
+                    android:inputType="number"
                     android:paddingStart="24dp"
                     android:textColor="@color/fontdarkcolor"
                     android:textSize="16dp"
@@ -404,7 +477,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="Minum Air"
+                    android:text="Minum Air (ml)"
                     android:textColor="@color/fontdarkcolor"
                     android:textSize="18dp"
                     />
@@ -415,6 +488,7 @@
                     android:hint="Masukkan total air yang diminum"
                     android:background="@drawable/bg_edittext"
                     android:fontFamily="@font/poppins_medium"
+                    android:inputType="number"
                     android:padding="14dp"
                     android:paddingStart="24dp"
                     android:textColor="@color/fontdarkcolor"
