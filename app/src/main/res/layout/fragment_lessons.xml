@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LessonsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.Lessons">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/primarylightcolor"
+                android:orientation="vertical"
+                android:paddingHorizontal="23dp"
+                tools:context=".ui.Lessons"
+                android:paddingBottom="100dp">
+
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Ayo cari tahu tentang"
+                    android:textColor="@color/fontdarkcolor"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="kesehatan menstruasi!"
+                    android:textColor="@color/primarydarkcolor"
+                    android:textSize="20dp"
+                    android:layout_marginTop="-12dp"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_white"
+                    android:padding="4dp"
+                    android:layout_marginTop="16dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="12dp"
+                        android:src="@drawable/icon_search"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </ImageView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:background="@color/whitecolor"
+                        android:hint="Coba “Siklus Menstruasi”"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </EditText>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/lessoncard1"
+                        android:layout_width="165dp"
+                        android:layout_height="211dp"
+                        android:background="@drawable/bg_lessoncard"
+                        android:fontFamily="@font/poppins"
+                        android:padding="10dp"
+                        android:text="Jika siklus tidak normal, apa yang harus dilakukan?"
+                        android:textColor="@color/fontdarkcolor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/lessoncard2"
+                        android:layout_width="165dp"
+                        android:layout_height="211dp"
+                        android:background="@drawable/bg_lessoncard"
+                        android:fontFamily="@font/poppins"
+                        android:padding="10dp"
+                        android:text="Siklus Menstruasi yang Tidak Normal"
+                        android:textColor="@color/fontdarkcolor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/lessoncard3"
+                        android:layout_width="165dp"
+                        android:layout_height="211dp"
+                        android:background="@drawable/bg_lessoncard"
+                        android:fontFamily="@font/poppins"
+                        android:padding="10dp"
+                        android:text="Jika siklus tidak normal, apa yang harus dilakukan?"
+                        android:textColor="@color/fontdarkcolor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/lessoncard4"
+                        android:layout_width="165dp"
+                        android:layout_height="211dp"
+                        android:background="@drawable/bg_lessoncard"
+                        android:fontFamily="@font/poppins"
+                        android:padding="10dp"
+                        android:text="Siklus Menstruasi yang Tidak Normal"
+                        android:textColor="@color/fontdarkcolor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/lessoncard5"
+                        android:layout_width="165dp"
+                        android:layout_height="211dp"
+                        android:background="@drawable/bg_lessoncard"
+                        android:fontFamily="@font/poppins"
+                        android:padding="10dp"
+                        android:text="Jika siklus tidak normal, apa yang harus dilakukan?"
+                        android:textColor="@color/fontdarkcolor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/lessoncard6"
+                        android:layout_width="165dp"
+                        android:layout_height="211dp"
+                        android:background="@drawable/bg_lessoncard"
+                        android:fontFamily="@font/poppins"
+                        android:padding="10dp"
+                        android:text="Siklus Menstruasi yang Tidak Normal"
+                        android:textColor="@color/fontdarkcolor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/lessoncard7"
+                        android:layout_width="165dp"
+                        android:layout_height="211dp"
+                        android:background="@drawable/bg_lessoncard"
+                        android:fontFamily="@font/poppins"
+                        android:padding="10dp"
+                        android:text="Jika siklus tidak normal, apa yang harus dilakukan?"
+                        android:textColor="@color/fontdarkcolor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/lessoncard8"
+                        android:layout_width="165dp"
+                        android:layout_height="211dp"
+                        android:background="@drawable/bg_lessoncard"
+                        android:fontFamily="@font/poppins"
+                        android:padding="10dp"
+                        android:text="Siklus Menstruasi yang Tidak Normal"
+                        android:textColor="@color/fontdarkcolor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
