@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ExerciseActivity"
+    tools:context=".ui.Exercise2Activity"
     android:orientation="vertical"
     android:paddingHorizontal="20dp"
     android:paddingVertical="24dp"
@@ -36,7 +36,7 @@
     <ImageView
         android:layout_width="260dp"
         android:layout_height="260dp"
-        android:src="@drawable/pic_swimming"
+        android:src="@drawable/pic_run"
         android:layout_marginBottom="10dp"></ImageView>
 
     <LinearLayout
@@ -78,7 +78,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tekanan air di dalam kolam renang akan menghambat darah keluar hanya selama  berada di dalam air saja."
+                android:text="Olahraga ringan membantu melepas hormon endorfin sebagai pereda nyeri sekaligus menimbulkan perasaan nyaman dan senang"
                 android:textSize="16dp"></TextView>
         </LinearLayout>
         <LinearLayout
@@ -112,7 +112,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Berenang dapat menghentikan siklus menstruasi hingga mandul. Darah dapat mengotori air kolam sehingga air berubah warna merah."
+                android:text="Olahraga memperparah nyeri haid."
                 android:textSize="16dp"></TextView>
         </LinearLayout>
 
@@ -138,14 +138,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1"
-            android:textColor="@color/primarydarkcolor"
+            android:textColor="#BEB4B4"
             android:layout_marginEnd="5dp"></TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2"
-            android:textColor="#BEB4B4"
+            android:textColor="@color/primarydarkcolor"
             android:layout_marginEnd="5dp"></TextView>
 
         <TextView
