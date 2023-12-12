@@ -57,7 +57,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/poppins_extrabold"
-                        android:text="Ica Nur Chasanah"
+                        android:text="Sahabat Noona"
                         android:textColor="@color/fontdarkcolor"
                         android:textSize="24dp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -85,7 +85,7 @@
                     android:fontFamily="@font/poppins_medium"
                     android:padding="14dp"
                     android:paddingStart="24dp"
-                    android:text="icanurchasanah@gmail.com"
+                    android:text="sahabatnoona@gmail.com"
                     android:textColor="@color/fontlightcolor"
                     android:textSize="16dp"
                     tools:layout_editor_absoluteY="368dp" />
