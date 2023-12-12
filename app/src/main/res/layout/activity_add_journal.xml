@@ -177,76 +177,117 @@
 <!--                            android:src="@drawable/ic_mood_4"-->
 <!--                            android:layout_marginRight="16dp"-->
 <!--                            />-->
+<!--                        <RadioGroup-->
+<!--                            android:id="@+id/rg_mood"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            >-->
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/rb_mood_0"-->
+<!--                                android:layout_width="56dp"-->
+<!--                                android:layout_height="56dp"-->
+<!--                                android:layout_marginRight="16dp"-->
+<!--                                android:fontFamily="@font/poppins"-->
+<!--                                android:textSize="18dp"-->
+<!--                                android:button="@null"-->
+<!--                                android:backgroundTint="@color/graycolor"-->
+<!--                                android:backgroundTintMode="multiply"-->
+<!--                                android:background="@drawable/ic_mood_0"-->
+<!--                                android:textColor="@color/fontdarkcolor"-->
+<!--                                />-->
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/rb_mood_1"-->
+<!--                                android:layout_width="56dp"-->
+<!--                                android:layout_height="56dp"-->
+<!--                                android:layout_marginRight="16dp"-->
+<!--                                android:fontFamily="@font/poppins"-->
+<!--                                android:textSize="18dp"-->
+<!--                                android:button="@null"-->
+<!--                                android:backgroundTint="@color/graycolor"-->
+<!--                                android:backgroundTintMode="multiply"-->
+<!--                                android:background="@drawable/ic_mood_1"-->
+<!--                                android:textColor="@color/fontdarkcolor"-->
+<!--                                />-->
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/rb_mood_2"-->
+<!--                                android:layout_width="56dp"-->
+<!--                                android:layout_height="56dp"-->
+<!--                                android:layout_marginRight="16dp"-->
+<!--                                android:fontFamily="@font/poppins"-->
+<!--                                android:textSize="18dp"-->
+<!--                                android:button="@null"-->
+<!--                                android:backgroundTint="@color/graycolor"-->
+<!--                                android:backgroundTintMode="multiply"-->
+<!--                                android:background="@drawable/ic_mood_2"-->
+<!--                                android:textColor="@color/fontdarkcolor"-->
+<!--                                />-->
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/rb_mood_3"-->
+<!--                                android:layout_width="56dp"-->
+<!--                                android:layout_height="56dp"-->
+<!--                                android:layout_marginRight="16dp"-->
+<!--                                android:fontFamily="@font/poppins"-->
+<!--                                android:textSize="18dp"-->
+<!--                                android:button="@null"-->
+<!--                                android:backgroundTint="@color/graycolor"-->
+<!--                                android:backgroundTintMode="multiply"-->
+<!--                                android:background="@drawable/ic_mood_3"-->
+<!--                                android:textColor="@color/fontdarkcolor"-->
+<!--                                />-->
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/rb_mood_4"-->
+<!--                                android:layout_width="56dp"-->
+<!--                                android:layout_height="56dp"-->
+<!--                                android:layout_marginRight="16dp"-->
+<!--                                android:fontFamily="@font/poppins"-->
+<!--                                android:textSize="18dp"-->
+<!--                                android:button="@null"-->
+<!--                                android:backgroundTint="@color/graycolor"-->
+<!--                                android:backgroundTintMode="multiply"-->
+<!--                                android:background="@drawable/ic_mood_4"-->
+<!--                                android:textColor="@color/fontdarkcolor"-->
+<!--                                />-->
+<!--                        </RadioGroup>-->
                         <RadioGroup
                             android:id="@+id/rg_mood"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            >
+                            android:orientation="horizontal">
                             <RadioButton
-                                android:id="@+id/rb_mood_0"
-                                android:layout_width="56dp"
-                                android:layout_height="56dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableRight="@drawable/ic_mood_0"
                                 android:layout_marginRight="16dp"
-                                android:fontFamily="@font/poppins"
-                                android:textSize="18dp"
-                                android:button="@null"
-                                android:backgroundTint="@color/graycolor"
-                                android:backgroundTintMode="multiply"
-                                android:background="@drawable/ic_mood_0"
-                                android:textColor="@color/fontdarkcolor"
+                                android:tag="Sangat Buruk"
                                 />
                             <RadioButton
-                                android:id="@+id/rb_mood_1"
-                                android:layout_width="56dp"
-                                android:layout_height="56dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableRight="@drawable/ic_mood_1"
                                 android:layout_marginRight="16dp"
-                                android:fontFamily="@font/poppins"
-                                android:textSize="18dp"
-                                android:button="@null"
-                                android:backgroundTint="@color/graycolor"
-                                android:backgroundTintMode="multiply"
-                                android:background="@drawable/ic_mood_1"
-                                android:textColor="@color/fontdarkcolor"
+                                android:tag="Buruk"
                                 />
                             <RadioButton
-                                android:id="@+id/rb_mood_2"
-                                android:layout_width="56dp"
-                                android:layout_height="56dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@drawable/ic_mood_2"
                                 android:layout_marginRight="16dp"
-                                android:fontFamily="@font/poppins"
-                                android:textSize="18dp"
-                                android:button="@null"
-                                android:backgroundTint="@color/graycolor"
-                                android:backgroundTintMode="multiply"
-                                android:background="@drawable/ic_mood_2"
-                                android:textColor="@color/fontdarkcolor"
+                                android:tag="Biasa"
                                 />
                             <RadioButton
-                                android:id="@+id/rb_mood_3"
-                                android:layout_width="56dp"
-                                android:layout_height="56dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableRight="@drawable/ic_mood_3"
                                 android:layout_marginRight="16dp"
-                                android:fontFamily="@font/poppins"
-                                android:textSize="18dp"
-                                android:button="@null"
-                                android:backgroundTint="@color/graycolor"
-                                android:backgroundTintMode="multiply"
-                                android:background="@drawable/ic_mood_3"
-                                android:textColor="@color/fontdarkcolor"
+                                android:tag="Baik"
                                 />
                             <RadioButton
-                                android:id="@+id/rb_mood_4"
-                                android:layout_width="56dp"
-                                android:layout_height="56dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableRight="@drawable/ic_mood_4"
                                 android:layout_marginRight="16dp"
-                                android:fontFamily="@font/poppins"
-                                android:textSize="18dp"
-                                android:button="@null"
-                                android:backgroundTint="@color/graycolor"
-                                android:backgroundTintMode="multiply"
-                                android:background="@drawable/ic_mood_4"
-                                android:textColor="@color/fontdarkcolor"
+                                android:tag="Sangat Baik"
                                 />
                         </RadioGroup>
                     </LinearLayout>
