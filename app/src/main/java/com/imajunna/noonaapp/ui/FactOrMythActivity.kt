@@ -13,24 +13,17 @@ class FactOrMythActivity : AppCompatActivity() {
     private lateinit var binding:ActivityFactOrMythBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_fact_or_myth)
 
         binding = ActivityFactOrMythBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.btnBack.setOnClickListener {
-            startActivity(Intent(this, DashboardFragment::class.java))
+            startActivity(Intent(this, Dashboard::class.java))
             finish()
         }
-
-        binding.fact1.setOnClickListener {
+        binding.btnExercise.setOnClickListener {
             startActivity(Intent(this, ExerciseActivity::class.java))
             finish()
         }
-
-//        binding.btnLessons.setOnClickListener {
-//            startActivity(Intent(this, Lessons::class.java))
-//            finish()
-//        }
     }
 }
